@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/wendesday_list_divideline"
+        android:layout_width="match_parent"
+        android:background="#f0f0f0"
+        android:layout_height="20dp" />
+<ImageView
+    android:id="@+id/wendesday_list_image"
+    android:layout_below="@+id/wendesday_list_divideline"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:scaleType="fitXY"
+    android:background="@drawable/def_loading"
+    android:layout_height="200dp" />
+    <RelativeLayout
+        android:layout_alignBottom="@+id/wendesday_list_image"
+        android:layout_alignLeft="@+id/wendesday_list_image"
+        android:layout_alignRight="@+id/wendesday_list_image"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#67aeaeae"
+        >
+        <TextView
+            android:id="@+id/wendesday_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="国奥加油"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            />
+  <TextView
+      android:layout_marginLeft="10dp"
+      android:layout_below="@+id/wendesday_list_name"
+      android:id="@+id/wendesday_list_addtime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@drawable/g_biao"
+      android:text="2016-08-12"
+      android:textSize="10sp"
+      />
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/wendesday_list_image"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</RelativeLayout>

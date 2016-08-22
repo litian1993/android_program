@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+   >
+    <ImageView
+        android:id="@+id/weekdetail_list_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:minWidth="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_loading" />
+
+
+
+    <TextView
+
+        android:id="@+id/weekdetail_list_gamename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/weekdetail_list_pic"
+        android:text="礼包名称"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        />
+
+
+   
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/weekdetail_list_introduce"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/weekdetail_list_type"
+        android:layout_alignLeft="@+id/weekdetail_list_gamename"
+        android:text="一款经典游戏"
+        android:gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/weekdetail_list_pic"
+        android:textSize="11sp" />
+
+<TextView
+    android:id="@+id/weekdetail_list_type"
+    android:layout_below="@id/weekdetail_list_gamename"
+    android:layout_toRightOf="@id/kaice_list_biao"
+    android:textSize="10sp"
+    android:gravity="bottom"
+    android:textColor="#000000"
+    android:layout_alignLeft="@id/weekdetail_list_introduce"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="类型：角色扮演"
+    />
+    <Button
+        android:id="@+id/weekdetail_download"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:text="下载"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/check_btn"
+        android:layout_alignBottom="@+id/weekdetail_list_type"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/weekdetail_list_size"
+        android:layout_toRightOf="@id/weekdetail_list_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/weekdetail_list_type"
+        android:layout_marginLeft="10dp"
+        android:text="大小：230M"
+        android:textSize="10sp"
+        android:gravity="bottom"
+        android:textColor="#000000"
+        />
+</RelativeLayout>

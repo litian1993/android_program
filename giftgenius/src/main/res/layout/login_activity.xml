@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="40dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/login_user_name"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:hint="请输入ID/邮箱/手机手机号码"
+        android:drawableLeft="@drawable/login_user"
+        android:background="@null"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/login_dividline"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/login_user_name"
+        android:background="#BCBCBC"
+        android:layout_height="0.5dp" />
+    <EditText
+        android:id="@+id/login_user_password"
+        android:layout_below="@+id/login_dividline"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:hint="请输入密码"
+        android:drawableLeft="@drawable/login_password"
+        android:background="@null"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/login_dividline2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/login_user_password"
+        android:background="#BCBCBC"
+        android:layout_height="0.5dp" />
+    <Button
+        android:id="@+id/login_confire_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="立即登录"
+        android:textColor="#ffffff"
+        android:layout_below="@id/login_dividline2"
+        android:background="@drawable/login_selector"
+        android:layout_height="40dp" />
+</RelativeLayout>

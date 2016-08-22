@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="20dp"
+   >
+    <ImageView
+        android:id="@+id/hotspot_game_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:minWidth="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_loading" />
+
+
+
+    <TextView
+
+        android:id="@+id/hotspot_game_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hotspot_game_pic"
+        android:text="礼包名称"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/hotspot_game_gamesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/hotspot_game_type"
+        android:text="大小：234M"
+        android:layout_alignBottom="@+id/hotspot_game_pic"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/hotspot_game_pic"
+        android:layout_alignLeft="@+id/hotspot_game_name"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/hotspot_game_type"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotspot_game_name"
+        android:layout_alignLeft="@+id/hotspot_game_name"
+        android:text="类型：动作格斗"
+        android:layout_marginTop="5dp"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+
+<TextView
+    android:id="@+id/hotspot_show_number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimary"
+    android:text="10220"
+    android:layout_toLeftOf="@+id/hotspot_show_people"
+    android:layout_alignBaseline="@+id/hotspot_game_type"
+
+    />
+<TextView
+    android:id="@+id/hotspot_show_people"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="人在玩"
+    android:layout_alignBaseline="@+id/hotspot_show_number"
+    />
+
+</RelativeLayout>

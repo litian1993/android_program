@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<TextView
+    android:id="@+id/remen_show_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="精品推荐"
+    android:gravity="left"
+    android:textSize="12sp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:textColor="#A8A8A8"
+    android:background="#EBEBEC"
+
+    />
+
+    <com.phone1000.giftgenius.CustonListView
+        android:id="@+id/remen_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/remen_show_tv"
+        />
+
+
+
+
+</RelativeLayout>

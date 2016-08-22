@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+   >
+    <ImageView
+        android:id="@+id/kaifu_list_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:minWidth="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_loading" />
+
+
+
+    <TextView
+
+        android:id="@+id/kaifu_list_gamename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kaifu_list_pic"
+        android:text="礼包名称"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+   
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/kaifu_list_gameowner"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kaifu_list_starttime"
+        android:layout_alignLeft="@+id/kaifu_list_gamename"
+        android:text="运营商：上海某公司"
+        android:gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@+id/kaifu_list_pic"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+<ImageView
+    android:id="@+id/kaice_list_biao"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/g_biao"
+    android:layout_marginTop="8dp"
+    android:layout_below="@+id/kaifu_list_gamename"
+    android:layout_toRightOf="@id/kaifu_list_pic"
+    android:layout_alignLeft="@+id/kaifu_list_gameowner"
+
+    />
+<TextView
+    android:id="@+id/kaifu_list_starttime"
+    android:layout_below="@id/kaifu_list_gamename"
+    android:layout_toRightOf="@id/kaice_list_biao"
+    android:textSize="10sp"
+    android:gravity="left"
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimary"
+    android:layout_marginLeft="5dp"
+    android:text="08-20 10:00"
+    />
+    <TextView
+        android:id="@+id/kaifu_kaifu_check"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:text="查看"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/check_btn"
+        android:layout_alignBaseline="@+id/kaifu_list_starttime"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/kaifu_list_area"
+        android:layout_toRightOf="@id/kaifu_list_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/kaifu_list_starttime"
+        android:layout_marginLeft="30dp"
+        android:text="123服"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/weekdetail_header_image"
+    android:src="@drawable/def_loading"
+    android:scaleType="fitXY"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" />
+    <TextView
+        android:id="@+id/weekdetail_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#12ffffff"
+        android:textColor="#ffffff"
+        android:text="新游周期第29期"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+         />
+   <Button
+       android:id="@+id/weekdetail_header_back"
+       android:layout_width="40dp"
+       android:layout_height="20dp"
+       android:background="@drawable/back"
+       android:layout_alignParentLeft="true"
+       android:layout_marginTop="7.5dp"
+       android:layout_marginLeft="5dp"
+       />
+    <Button
+        android:id="@+id/weekdetail_header_share"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@drawable/share"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/weekdetail_header_logo"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/weekdetail_header_title"
+        android:src="@drawable/def_loading"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/detailweek_header_info"
+        android:layout_toRightOf="@+id/weekdetail_header_logo"
+        android:layout_alignTop="@+id/weekdetail_header_logo"
+        android:layout_alignBottom="@+id/weekdetail_header_image"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:text="游戏详情"
+        android:textSize="12sp"
+        android:background="@drawable/header_info_shape"
+        android:layout_height="match_parent" />
+</RelativeLayout>

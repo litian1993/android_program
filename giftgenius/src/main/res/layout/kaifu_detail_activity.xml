@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/kaifu_detail_image"
+    android:src="@drawable/def_loading"
+    android:layout_marginLeft="10dp"
+    android:scaleType="centerCrop"
+    android:layout_width="70dp"
+    android:layout_height="70dp" />
+    <TextView
+        android:id="@+id/kaifu_detail_gname"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/kaifu_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/kaifu_detail_gkind"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/kaifu_detail_gname"
+        android:layout_toRightOf="@id/kaifu_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/kaifu_detail_gsize"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/kaifu_detail_gkind"
+        android:layout_alignBottom="@+id/kaifu_detail_image"
+        android:layout_toRightOf="@id/kaifu_detail_image"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:id="@+id/kaifu_detail_scroview"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/kaifu_detail_gsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/image_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </LinearLayout>
+        </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/kaifu_detail_showtv"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/kaifu_detail_scroview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:id="@+id/kaifu_detail_detaile"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/kaifu_detail_showtv"
+        android:layout_above="@+id/kaifu_detail_divideline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/kaifu_detail_downloadBtn"
+        android:layout_width="100dp"
+        android:text="立即下载"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/check_btn"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/kaifu_detail_divideline1"
+        android:layout_above="@+id/kaifu_detail_downloadBtn"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+</RelativeLayout>

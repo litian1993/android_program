@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/wendesdayplay_detail_image"
+    android:src="@drawable/def_loading"
+    android:scaleType="fitXY"
+    android:layout_width="match_parent"
+    android:layout_height="150dp" />
+    <TextView
+        android:id="@+id/wendesdayplay_show_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:drawableLeft="@drawable/g_biao"
+        android:layout_marginLeft="10dp"
+        android:text="2016_08_21"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/wendesdayplay_detail_image"
+        />
+    <TextView
+        android:layout_below="@+id/wendesdayplay_detail_image"
+        android:id="@+id/wendesdayplay_detail_info"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:layout_below="@id/wendesdayplay_detail_info"
+        android:id="@+id/wendesdayplay_detail_gridview"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

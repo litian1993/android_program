@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+   >
+    <ImageView
+        android:id="@+id/list_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:minWidth="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_loading" />
+
+
+
+    <TextView
+
+        android:id="@+id/list_gift_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_pic"
+        android:text="礼包名称"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/list_tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBottom="@id/list_pic"
+        android:layout_below="@+id/list_gift_kind"
+        android:text="剩余："
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/list_pic"
+        android:layout_alignLeft="@+id/list_gift_name"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/list_gift_kind"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/list_gift_name"
+        android:layout_alignLeft="@+id/list_gift_name"
+        android:text="礼包类型"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+
+    <TextView
+
+        android:id="@+id/list_gift_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list_tv_show"
+        android:layout_below="@id/list_gift_kind"
+        android:layout_toRightOf="@id/list_tv_show"
+        android:text="20"
+        android:gravity="left"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_below="@id/list_gift_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_tv_showTime"
+        android:layout_toRightOf="@+id/list_gift_number"
+        android:layout_alignBaseline="@id/list_gift_number"
+        android:text="时间:"
+        android:layout_marginLeft="5dp"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+
+    <TextView
+
+        android:id="@+id/list_gift_addtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加时间"
+        android:gravity="center"
+        android:layout_toRightOf="@id/list_tv_showTime"
+        android:layout_below="@id/list_gift_kind"
+        android:layout_alignBaseline="@id/list_gift_number"
+        android:textColor="#d5d5d5"
+        android:textSize="11sp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/list_download_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/list_gift_kind"
+        android:text="立即领取"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff" />
+
+
+
+
+</RelativeLayout>
