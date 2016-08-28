@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFCF9"
+    tools:context="com.phone1000.lazyweekended.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_fragment_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mian_text_dividline1" />
+    <TextView
+        android:id="@+id/mian_text_dividline1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEAE8"
+        android:layout_above="@+id/main_radio_group"
+        />
+    <RadioGroup
+        android:id="@+id/main_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_radio_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:button="@null"
+            android:padding="15dp"
+            android:drawableBottom="@drawable/main_first_selector" />
+
+        <RadioButton
+            android:id="@+id/main_radio_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:button="@null"
+            android:padding="15dp"
+            android:drawableBottom="@drawable/main_second_selector" />
+
+        <RadioButton
+            android:id="@+id/main_radio_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:padding="15dp"
+            android:layout_weight="0.17"
+            android:drawableBottom="@drawable/main_third_selector" />
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.32"
+    />
+        <RadioButton
+            android:id="@+id/main_radio_fourth"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:padding="15dp"
+            android:drawableBottom="@drawable/main_fourth_selector" />
+    </RadioGroup>
+</RelativeLayout>

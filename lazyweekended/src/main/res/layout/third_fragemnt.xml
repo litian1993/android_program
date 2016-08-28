@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFBF8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/third_fragment_title"
+    android:text="懒人助理"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize" />
+    <TextView 
+        android:layout_below="@id/third_fragment_title"
+        android:id="@+id/third_fragment_dividline"
+        android:background="#EDEAE8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <ImageView
+        android:id="@+id/third_fragment_image"
+        android:layout_below="@+id/third_fragment_dividline"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/big_black_cat"/>
+    <RelativeLayout
+        android:id="@+id/third_fragment_textll"
+        android:layout_toRightOf="@+id/third_fragment_image"
+        android:layout_alignTop="@+id/third_fragment_image"
+        android:backgroundTint="@drawable/rc_ic_bubble_white_9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/third_fragment_remind"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#343A43"
+            android:text="@string/third_fragment_remind"
+            />
+        <TextView
+            android:id="@+id/third_fragment_smallremind"
+            android:layout_below="@id/third_fragment_remind"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/third_fragment_remind"
+            android:layout_width="wrap_content"
+            android:textColor="#C3C6CA"
+            android:textSize="12sp"
+            android:text="遇到问题？"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/third_fragment_btn"
+            android:layout_toRightOf="@+id/third_fragment_smallremind"
+            android:text="懒猫助理"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:layout_alignBottom="@+id/third_fragment_smallremind"
+            android:layout_below="@+id/third_fragment_remind"
+            android:textColor="#FF8C40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/third_fragment_smallremind2"
+            android:layout_below="@id/third_fragment_remind"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/third_fragment_btn"
+            android:layout_width="wrap_content"
+            android:textColor="#C3C6CA"
+            android:textSize="12sp"
+            android:layout_marginLeft="2dp"
+            android:text="为你服"
+            android:layout_alignRight="@+id/third_fragment_remind"
+            android:layout_height="wrap_content" />
+        <TextView
+           android:layout_below="@id/third_fragment_smallremind"
+            android:text="务~"
+            android:layout_alignLeft="@id/third_fragment_smallremind"
+            android:textColor="#C3C6CA"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    <EditText
+        android:layout_alignParentBottom="true"
+        android:id="@+id/third_fragment_search"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColorHint="#C3C6CA"
+        android:textSize="15sp"
+        android:hint="告诉我你的周末需求吧......"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_above="@id/third_fragment_search"
+        android:id="@+id/third_fragment_dividline2"
+        android:background="#EDEAE8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/second_fragemnt_tll"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/second_fragemnt_location_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="地点"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:textColor="#C3C6CA"
+        android:drawableRight="@drawable/ic_down"
+        android:layout_height="match_parent" />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_marginRight="20dp"
+        android:hint="搜索地点或者活动"
+        android:drawableLeft="@drawable/ic_nav_search"
+        android:id="@+id/second_fragment_search"
+        android:textColorHint="#C3C6CA"
+        android:background="@null"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+
+</RelativeLayout>

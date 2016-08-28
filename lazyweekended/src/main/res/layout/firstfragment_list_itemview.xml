@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/first_list_image"
+    android:background="@drawable/pic2"
+    android:layout_width="match_parent"
+    android:scaleType="fitXY"
+    android:layout_height="260dp" />
+    <TextView
+        android:id="@+id/first_list_title"
+        android:layout_below="@+id/first_list_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBigText"
+        android:text="仅售158元 ，世界名曲轻松上手  成就你的钢琴梦想"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/first_list_poi"
+        android:layout_below="@id/first_list_title"
+        android:layout_alignLeft="@+id/first_list_title"
+        android:layout_alignRight="@+id/first_fragment_title"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorSmallText"
+        android:textSize="14sp"
+        android:text="星空琴行（武汉武胜凯德店)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/first_list_timeDsc"
+        android:textColor="@color/colorSmallText"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/first_list_title"
+        android:layout_below="@id/first_list_poi"
+        android:layout_marginTop="10dp"
+        android:text="截止至10月24日"
+        android:padding="3dp"
+        android:background="@drawable/first_textview_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/first_list_collect_ll"
+        android:layout_below="@id/first_list_title"
+        android:layout_toRightOf="@+id/first_list_timeDsc"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/first_list_timeDsc"
+        android:layout_alignBottom="@id/first_list_timeDsc"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/first_textview_shape"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/first_list_iscollect"
+            android:layout_width="15dp"
+            android:button="@null"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/heart_seletor"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/first_list_collectnumber"
+            android:layout_toRightOf="@id/first_list_iscollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSmallText"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:text="10人收藏"
+            />
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/first_list_sell"
+        android:background="@drawable/first_textview_shape"
+        android:layout_alignTop="@id/first_list_collect_ll"
+        android:layout_alignBottom="@id/first_list_collect_ll"
+        android:layout_marginRight="20dp"
+        android:padding="3dp"
+        android:text="￥150"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/first_list_dividline1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/dividlineBackgroud"
+        android:layout_below="@id/first_list_collect_ll"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/first_list_dividline2"
+        android:layout_below="@id/first_list_dividline1"
+        android:background="@color/dividLineBackground2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</RelativeLayout>

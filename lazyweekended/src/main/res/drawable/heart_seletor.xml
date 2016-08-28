@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@drawable/ic_nav_pink_heart_on_small" android:state_checked="true"/>
+    <item android:drawable="@drawable/ic_nav_black_heart_off_small" />
+</selector>
