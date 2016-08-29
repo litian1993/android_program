@@ -18,7 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by 李田 on 2016/8/26.
+ * Created by li tian on 2016/8/26.
  */
 public class FirstListAdapter extends BaseAdapter {
     private List<FirstPageInfo.ResultBean>  resultBeanList ;
@@ -50,7 +50,7 @@ public class FirstListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-           View view =convertView;
+           View view = convertView;
         ViewHolder holder = null;
         if(convertView == null){
             view = LayoutInflater.from(mContext).inflate(R.layout.firstfragment_list_itemview,parent,false);

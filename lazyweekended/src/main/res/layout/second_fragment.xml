@@ -19,16 +19,25 @@
         android:drawableRight="@drawable/ic_down"
         android:layout_height="match_parent" />
     <EditText
+        android:id="@+id/second_fragment_search"
         android:layout_width="0dp"
         android:layout_weight="4"
         android:layout_marginRight="20dp"
         android:hint="搜索地点或者活动"
         android:drawableLeft="@drawable/ic_nav_search"
-        android:id="@+id/second_fragment_search"
         android:textColorHint="#C3C6CA"
         android:background="@null"
         android:layout_height="match_parent"/>
 </LinearLayout>
-
+<GridView
+    android:id="@+id/second_fragment_gridview"
+    android:layout_below="@+id/second_fragemnt_tll"
+    android:numColumns="2"
+    android:horizontalSpacing="30dp"
+    android:verticalSpacing="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></GridView>
 
 </RelativeLayout>

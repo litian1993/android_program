@@ -1,6 +1,7 @@
 package com.phone1000.lazyweekended.module;
 
 import com.phone1000.lazyweekended.presenter.IpagePresenter;
+import com.phone1000.lazyweekended.presenter.IsecondPresenter;
 
 /**
  * Created by 李田 on 2016/8/27.
@@ -11,6 +12,6 @@ public interface IpagelistModel {
      *
      */
     void getListInfo(IpagePresenter.Callback callback);
-
+    void getSecondPageIngo(IsecondPresenter.SecondCallBack callBack);
 
 }

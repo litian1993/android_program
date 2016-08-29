@@ -16,4 +16,5 @@ public interface IpagePresenter {
     interface Callback{
         void success(FirstPageInfo firstPageInfo);
     }
+
 }

@@ -21,7 +21,8 @@ public class PagePresenterImpl implements IpagePresenter,IpagePresenter.Callback
      */
     @Override
     public void queryList() {
-         mImodel.getListInfo(this);
+
+        mImodel.getListInfo(this);
     }
 
     /**
@@ -30,6 +31,7 @@ public class PagePresenterImpl implements IpagePresenter,IpagePresenter.Callback
      */
     @Override
     public void success(FirstPageInfo firstPageInfo) {
-            mIpageView.refreshListView(firstPageInfo);
+
+        mIpageView.refreshListView(firstPageInfo);
     }
 }
