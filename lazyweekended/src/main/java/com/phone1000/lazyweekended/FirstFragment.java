@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import com.phone1000.lazyweekended.Adapter.FirstListAdapter;
 import com.phone1000.lazyweekended.bean.FirstPageInfo;
-import com.phone1000.lazyweekended.presenter.PagePresenterImpl;
+import com.phone1000.lazyweekended.presenter.impl.PagePresenterImpl;
 import com.phone1000.lazyweekended.view.IpageView;
 
 import java.util.ArrayList;

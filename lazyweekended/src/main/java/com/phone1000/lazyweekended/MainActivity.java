@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
 import java.util.ArrayList;
@@ -104,6 +105,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             return fragmentList == null? 0:fragmentList.size();
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+
         }
     }
 }

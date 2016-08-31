@@ -114,7 +114,7 @@ public class FirstPageInfo {
         private int viewed_num;
         private String consult_phone;
         private String jump_type;
-        private int price;
+        private float price;
         private String time_info;
         private String time_desc;
         private String jump_data;
@@ -236,11 +236,12 @@ public class FirstPageInfo {
             this.jump_type = jump_type;
         }
 
-        public int getPrice() {
+        public float getPrice() {
             return price;
         }
 
-        public void setPrice(int price) {
+        public void setPrice(float price) {
+
             this.price = price;
         }
 

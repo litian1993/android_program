@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
     android:layout_width="match_parent" android:layout_height="match_parent">
 <ImageView
     android:id="@+id/first_list_image"
@@ -15,7 +16,7 @@
         android:textColor="@color/colorBigText"
         android:text="仅售158元 ，世界名曲轻松上手  成就你的钢琴梦想"
         android:layout_marginRight="10dp"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -44,13 +45,13 @@
         android:layout_height="wrap_content" />
     <RelativeLayout
         android:id="@+id/first_list_collect_ll"
-        android:layout_below="@id/first_list_title"
+        android:layout_below="@id/first_list_poi"
         android:layout_toRightOf="@+id/first_list_timeDsc"
         android:layout_marginLeft="10dp"
-        android:layout_alignTop="@+id/first_list_timeDsc"
+        android:layout_marginTop="10dp"
         android:layout_alignBottom="@id/first_list_timeDsc"
         android:layout_width="wrap_content"
-        android:padding="5dp"
+        android:padding="2dp"
         android:background="@drawable/first_textview_shape"
         android:layout_height="wrap_content" >
 
@@ -68,17 +69,18 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorSmallText"
             android:textSize="14sp"
-            android:paddingLeft="5dp"
+            android:paddingLeft="2dp"
             android:text="10人收藏"
             />
         </RelativeLayout>
     <TextView
         android:id="@+id/first_list_sell"
         android:background="@drawable/first_textview_shape"
-        android:layout_alignTop="@id/first_list_collect_ll"
+        android:layout_below="@id/first_list_poi"
+        android:layout_marginTop="10dp"
         android:layout_alignBottom="@id/first_list_collect_ll"
-        android:layout_marginRight="20dp"
-        android:padding="3dp"
+        android:layout_marginRight="10dp"
+        android:padding="2dp"
         android:text="￥150"
         android:textSize="14sp"
         android:layout_alignParentRight="true"

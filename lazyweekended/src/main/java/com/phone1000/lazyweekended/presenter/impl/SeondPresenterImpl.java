@@ -1,7 +1,8 @@
-package com.phone1000.lazyweekended.presenter;
+package com.phone1000.lazyweekended.presenter.impl;
 
 import com.phone1000.lazyweekended.bean.SecondPageInfo;
 import com.phone1000.lazyweekended.module.PageImpl;
+import com.phone1000.lazyweekended.presenter.IsecondPresenter;
 import com.phone1000.lazyweekended.view.SecondPageView;
 
 /**

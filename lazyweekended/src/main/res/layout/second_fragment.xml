@@ -7,27 +7,44 @@
     android:layout_width="match_parent"
     android:layout_height="?actionBarSize"
     android:orientation="horizontal"
+    android:background="#ffffff"
     >
     <Button
         android:id="@+id/second_fragemnt_location_btn"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width= "0dp"
+        android:layout_weight="1.2"
+        android:paddingLeft="10dp"
+        android:paddingRight="18dp"
         android:text="地点"
-        android:gravity="center"
+        android:textSize="18sp"
         android:background="#ffffff"
-        android:textColor="#C3C6CA"
+        android:textColor="@color/colorBigText"
         android:drawableRight="@drawable/ic_down"
         android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3.8"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
     <EditText
         android:id="@+id/second_fragment_search"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="4"
-        android:layout_marginRight="20dp"
-        android:hint="搜索地点或者活动"
+        android:layout_marginLeft="10dp"
         android:drawableLeft="@drawable/ic_nav_search"
-        android:textColorHint="#C3C6CA"
         android:background="@null"
-        android:layout_height="match_parent"/>
+        android:hint="搜索地点或活动"
+        android:textColorHint="#C3C6CA"
+       />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rc_bg_text_normal_9"
+            />
+    </LinearLayout>
 </LinearLayout>
 <GridView
     android:id="@+id/second_fragment_gridview"

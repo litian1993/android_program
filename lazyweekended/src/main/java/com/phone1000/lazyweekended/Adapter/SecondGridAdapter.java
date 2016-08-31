@@ -58,6 +58,7 @@ public class SecondGridAdapter extends BaseAdapter {
         SecondPageInfo.ResultBean resultBean = resultBeen.get(position);
         String imageUrl = resultBean.getIcon_view();
         viewHolder.itemTv.setText(resultBean.getCn_name());
+
         Picasso.with(mContext).load(imageUrl).into(viewHolder.itemIv);
         return view;
     }

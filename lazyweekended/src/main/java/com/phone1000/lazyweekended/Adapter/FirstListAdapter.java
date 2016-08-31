@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.phone1000.lazyweekended.R;
 import com.phone1000.lazyweekended.bean.FirstPageInfo;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -62,10 +63,24 @@ public class FirstListAdapter extends BaseAdapter {
         String imagUrl = resultBean.getFront_cover_image_list().get(0);
         holder.titleTv.setText(resultBean.getTitle());
         holder.poiTv.setText(resultBean.getPoi()+"~"+resultBean.getDistance()+"~"+resultBean.getCategory());
-        holder.timeDscTv.setText(resultBean.getTime_info());
+       if(!"".equals(resultBean.getTime_info())){
+           holder.timeDscTv.setText(resultBean.getTime_info());
+       }else{
+           holder.timeDscTv.setVisibility(View.GONE);
+       }
         holder.collectNumberTv.setText(resultBean.getCollected_num()+"人收藏");
         holder.sellTv.setText("￥"+resultBean.getPrice());
-        Picasso.with(mContext).load(imagUrl).into(holder.listPic);
+        Picasso.with(mContext).load(imagUrl).into(holder.listPic, new Callback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onError() {
+
+            }
+        });
         return view;
     }
     class ViewHolder{
